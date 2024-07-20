@@ -5,16 +5,7 @@
 from dataclasses import *
 
 @dataclass
-class Player:
-    id:str = ""
-    name: str|None =None
-    desc: str|None =None
-    materials:list|None =None
-    creature:list|None =None # Owned Creatures NAME
-    waifus:list|None =None  # Owned Waifus UUID
-
-@dataclass
-class Action:
+class Action: # Used Either with AI or Coded Directly
     id:str = ""
     name: str|None=None
     trigger: str|None=None
@@ -28,23 +19,18 @@ class Waifu:
     nickname: str|None =None
     desc: str | None = None
     appearance: str | None = None
-    # Stage 2 Generation (The Randomly Generated Stuff, separated because might use tags)
+    clothing: list | None = None
     face: str | None = None
     body: str | None = None
-    clothing: str | None = None
-    ero: str | None = None
-    # Stage 3 Generation (Even More Randomly Generated Stuff, separated because archetype)
-    archetype:list[str]|None=None
+    erogenous_zones: str | None = None
     personality:str|None=None
     quirk:str|None=None
-    fetish:str|None=None # I have a chance to turn this from my first game to my first eroge. Of course I'm doing it.
-    # Stage 4 Generation (Planned Feature)
+    fetish:str|None=None
     avatar_picture: str|None = None
     full_picture:str|None = None
-    # Misc Stuff
-    gifts:list[str]|None=None # Stuff you've given to your waifu
-    affection: int=0 # How much your waifu loves you
-    lewd: int=0 # How lewd your waifu is (Again, this is an eroge, I don't care)
+    affection: int=0
+    lewdness: int=0
+    actions: list | None = None
 
     # Also, I can slap this to RenPy if I want
     # That could be pretty interesting, Steam Worthy I say!
