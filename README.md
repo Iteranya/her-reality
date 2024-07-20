@@ -1,2 +1,3 @@
-# her-reality
-It's been years since I attempted this... Who knows, maybe this time I'll actually do it?
+# Her Reality
+And in our reality, if I don't know how to love you...
+I'll leave you be~
